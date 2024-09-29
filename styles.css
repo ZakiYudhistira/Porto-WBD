@@ -24,8 +24,8 @@ body {
 
 .icon-container {
     display: flex;
-    justify-content: flex-start; /* Aligns items from the start of the container */
-    column-gap: 28px; /* Adds horizontal spacing between flex items */
+    justify-content: flex-start;
+    column-gap: 28px;
     padding-top: 15px;
 }
 
@@ -41,8 +41,8 @@ body {
     border-radius: 25px;
     margin-right: 20px;
     object-fit: cover;
-    border: 2px solid #000; /* Adds a 2px solid black border */
-    padding: 10px;          /* Adds padding inside the border */
+    border: 2px solid #000; 
+    padding: 10px;          
     display: inline-block;
 }
 
@@ -135,7 +135,7 @@ body {
 
     .profile-photo img {
         width: 200px;
-        height: auto; /* This ensures the image maintains its aspect ratio */
+        height: auto;
         margin-right: 0;
         margin-bottom: 20px;
     }
