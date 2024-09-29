@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1080px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns items from the start of the container */
+    column-gap: 28px; /* Adds horizontal spacing between flex items */
+    padding-top: 15px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.profile-photo img {
+    width: 320px;
+    height: 473px;
+    border-radius: 25px;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 2px solid #000; /* Adds a 2px solid black border */
+    padding: 10px;          /* Adds padding inside the border */
+    display: inline-block;
+}
+
+.profile-info {
+    padding-left: 67px;
+}
+
+.profile-info h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.profile-info h2 {
+    font-size: 32px;
+    color: gray;
+    margin-top: 5px;
+}
+
+.profile-info p {
+    margin-top: 24px;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.projects-section {
+    margin-top: 30px;
+}
+
+.projects-section h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.projects {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 15px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-card p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tag {
+    background-color: #d32f2f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.tag.java {
+    background-color: #A04747;
+}
+
+.tag.python {
+    background-color: #D8A25E;
+}
+
+@media (max-width: 1100px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo img {
+        width: 200px;
+        height: auto; /* This ensures the image maintains its aspect ratio */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .profile-info h1 {
+        font-size: 32px;
+    }
+
+    .profile-info h2 {
+        font-size: 18px;
+    }
+
+    .profile-info p {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+
+    .icon-container {
+        justify-content: center;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+
+    .project-card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
